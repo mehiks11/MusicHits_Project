@@ -9,7 +9,7 @@ The four features used were selected for initial modeling as they had the most p
 
 The following is a plot of this model:
 
-![Peak Plot](logpeakplotmvp.png)
+![Peak Plot](https://github.com/mehiks11/MusicHits_Project/blob/master/Deliverables/MVP/peakplotmvp.png?raw=true)
 
 ![Log Peak Plot](https://github.com/mehiks11/MusicHits_Project/blob/master/Deliverables/MVP/logpeakplotmvp.png?raw=true)
 
