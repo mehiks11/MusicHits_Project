@@ -9,8 +9,8 @@ The four features used were selected for initial modeling as they had the most p
 
 The following is a plot of this model:
 
-![Log Peak Plot](logpeakplotmvp.png)
+![Peak Plot](logpeakplotmvp.png)
 
-![Log Peak Plot](peakplotmvp.png)
+![Log Peak Plot](https://github.com/mehiks11/MusicHits_Project/blob/master/Deliverables/MVP/logpeakplotmvp.png?raw=true)
 
 The R2 value calculated was .412, with an adjusted R2 as .411. 
