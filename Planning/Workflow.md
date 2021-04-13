@@ -65,9 +65,10 @@
 3. Create a list of song names for iteration
 4. Create a function that generically grabs *genre, length*, and *record label* from **wikipedia** and appends that dictionary with those values onto a list
 5. Use selenium to search every song name from the song list on **wikipedia** with the author name, click the first link, and run the above function 
-6. Create a function that generically grabs *key* and *BPM* from **notediscover**
-7. Use selenium to search every song name from song list on google search + notediscover, click on first link, and run above function
-8. 
-
+7. Create a function that generically grabs *key* and *BPM* from **notediscover**
+8. Use selenium to search every song name from song list on google search + notediscover, click on first link, and run above function
+9. Merge the above three lists with the values on song name for your dataset with song attributes
+10. Figure out how to work Spotify API and add further instructions below
+11. 
 
 
