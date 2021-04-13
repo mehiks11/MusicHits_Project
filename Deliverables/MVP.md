@@ -2,7 +2,7 @@
 
 This inital model yields the following function:
 
-$$y_{pred} = f(x) = 76.58 - 22x_{danceability} -.003x_{popularity} - 1.6x_{numwks}$$
+f(x) = 76.58 - 22x{danceability} - .003x{popularity} - 1.6x{numwks}
 
 The four features used were selected for initial modeling as they had the most palpable correlative relationships with the target variable, peak rank on billboard charts. The four features include danceability, followers, popularity, and number of weeks on the charts at the point of that peak position. 
 
