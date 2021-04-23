@@ -6,7 +6,7 @@ This project utilizes [Billboard Hot 100 data](https://www.billboard.com/charts/
 
 The workflow follows the building of several models (including lasso & ridge models, models with feature engineering, etc.), all of which are ultimately compared with cross validation to pick and finalize the best model.
 
-The model building notebook can be found [here](https://github.com/mehiks11/MusicHits_Project/blob/master/MusicHits%20Model%20Building.ipynb "Modeling Notebook").
+The model building notebook can be found [here](https://github.com/mehiks11/MusicHits_Project/blob/master/MusicHits%20Model%20Building.ipynb "Modeling Notebook") .
 
 [This notebook](https://github.com/mehiks11/MusicHits_Project/blob/master/Work%20notebooks/Collecting%20%26%20Cleaning%20Billboard%20Data%20.ipynb "Music Hits Data Notebook) details and shows the process of data collection using web scraping and API collection.
 
