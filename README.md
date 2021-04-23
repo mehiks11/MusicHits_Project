@@ -8,7 +8,6 @@ The workflow follows the building of several models (including lasso & ridge mod
 
 The model building notebook can be found [here](https://github.com/mehiks11/MusicHits_Project/blob/master/MusicHits%20Model%20Building.ipynb "Music Hits Modeling Notebook").
 
-
 [This notebook](https://github.com/mehiks11/MusicHits_Project/blob/master/Work%20notebooks/Collecting%20%26%20Cleaning%20Billboard%20Data%20.ipynb "Music Hits Data Notebook) details and shows the process of data collection using web scraping and API collection.
 
 The original project proposal with initially set intentions and goals for the project can be found [here](https://github.com/mehiks11/MusicHits_Project/blob/master/Deliverables/Proposal.md "Project Proposal").
