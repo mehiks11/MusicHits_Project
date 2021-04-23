@@ -15,4 +15,4 @@ The original project proposal with initially set intentions and goals for the pr
 
 [Final Model Presentation Slides](https://github.com/mehiks11/MusicHits_Project/blob/master/Music%20Hits%20Linear%20Regression%20Presentation.pdf "Presentation Slides")
 
-[Final Writeup](https://github.com/mehiks11/MusicHits_Project/blob/master/Deliverables/Final%20Writeup.md"Music Hits Final Writeup") 
+[Final Writeup](https://github.com/mehiks11/MusicHits_Project/blob/master/Deliverables/Final%20Writeup.md "Music Hits Final Writeup") 
