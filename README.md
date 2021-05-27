@@ -1,17 +1,58 @@
-##  Music Hits Regression Project 
-### *Predicting Peak Performance on Billboard Hot 100*
+# Predicting the Peak Rank of Songs on Billboard Hot 100
+Mehika P
+
+## Abstract
+The goal of this project was to use billboard data combined with data from the most popular subscription music streaming service to predict the peak ranking a song would reach on billboard given a select number of features. After building and comparing multiple models, there are a select few features from the original datasets that provide a decent prediction about the peak a song may reach in a given week. 
+
+## Design
+This project pulls its data via webscraping from [Billboard's Top 100 Charts](https://www.billboard.com/charts/hot-100) and using spotify's web API tool. Using correlative features from these two data sets, the linear model can help better predict the ability of a song to reach higher peaks and provide some guidance to record labels, investors, and musicians seeking to have a top hit. 
+
+## Data
+The dataset contains 2761 data points with 16 features for each, 5 of which were selected, and 3 of which were engineered for final model building purposes. Some of the most useful features were those that had to do with the artist, including artist popularity and followers on spotify. A baseline model was created using just the five selected features: danceability, artist popularity, artist followers, number of weeks on the charts, and song mode.
 
 
-This project utilizes [Billboard Hot 100 data](https://www.billboard.com/charts/hot-100 "Billboard Hot 100") and [Spotify's song Web API data](https://developer.spotify.com/documentation/web-api/ "Spotify Web API") to build a model that predicts how high a song can reach on Billboard's Hot 100 according to certain attributes. 
+## Algorithms
 
-The workflow follows the building of several models (including lasso & ridge models, models with feature engineering, etc.), all of which are ultimately compared with cross validation to pick and finalize the best model.
+*Feature Engineering*
+*  The first model modifications made post creating a baseline included ones with engineered features. These are the features originally tested, with those who did not improve model R2 scores being thrown out.
+   * polynomial features:
+      1. popularity squared *
+      2. followers squared *
+      3. number of weeks on charts squared *
+      4. danceability squared 
+   * interaction terms:
+      1. popularity and followers multiplied
+      3. popularity and followers divided
+      4. followers X danceability
+      5. danceability X popularity 
 
-The model building notebook can be found [here](https://github.com/mehiks11/MusicHits_Project/blob/master/MusicHits%20Model%20Building.ipynb "Modeling Notebook") .
+*Models*
+The target variable was logged from the start because it had a skewed distribution. A feature engineered model was selected including all thee of the starred features above. All three were selected as they provided the highest R2 values on validation data, scores that were higher scores from the training data. 
+Further, lasso and ridge models were created for both the baseline model and the engineered model to test for overfitting, with the best alpha found using CV. 
 
-[This notebook](https://github.com/mehiks11/MusicHits_Project/blob/8d86820ef6eb6af178bb7d611a44a4720d35b9cd/Work%20notebooks/Collecting%20&%20Cleaning%20Billboard%20Data%20.ipynb "Data Notebook") details and shows the process of data collection using web scraping and API collection.
+  
 
-The original project proposal with initially set intentions and goals for the project can be found [here](https://github.com/mehiks11/MusicHits_Project/blob/master/Deliverables/Proposal.md "Project Proposal").
+*Model Evaluation and Selection*
+Ultimately, the 6 chosen models were compared using cross validation and the means were compared, and found the feature engineered model to be the best model. The cross validation occured on validation data + training data, split into 5 folds. 
 
-[Final Model Presentation Slides](https://github.com/mehiks11/MusicHits_Project/blob/master/Music%20Hits%20Linear%20Regression%20Presentation.pdf "Presentation Slides")
 
-[Final Writeup](https://github.com/mehiks11/MusicHits_Project/blob/master/Deliverables/Final%20Writeup.md "Music Hits Final Writeup") 
+## Final coefficients:
+* Intercept: 4.222894599606599
+* Danceability:-9.18010339e-01
+* Popularity:2.66326807e-02
+* Followers:-4.04140264e-08
+* Num_wks:-1.06595401e-01
+* Mode:1.71709497e-01
+* Popularity Squared:-2.09622088e-04
+* Followers Squared:3.23195872e-16
+* Num_Wks Squared: 7.87829545e-04
+
+## Tools
+- Numpy and Pandas for data manipulation
+- Scikit-learn for modeling
+- Seaborn for plotting
+- Spotify API
+- Beautiful Soup/Selenium for Webscraping
+
+## Communication
+In addition to the presentation provided on my github, I plan to create a visual for my website when it is posted. 
