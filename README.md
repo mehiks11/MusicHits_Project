@@ -1,5 +1,4 @@
 # Predicting the Peak Rank of Songs on Billboard Hot 100
-Mehika P
 
 ## Abstract
 The goal of this project was to use billboard data combined with data from the most popular subscription music streaming service to predict the peak ranking a song would reach on billboard given a select number of features. After building and comparing multiple models, there are a select few features from the original datasets that provide a decent prediction about the peak a song may reach in a given week. 
